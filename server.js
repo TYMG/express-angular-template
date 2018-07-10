@@ -13,7 +13,7 @@ shell.exec('ng build --base-href /matt-green/ --aot', function (code, stdout, st
     console.log('Building rpdr-fl now............................')
     shell.exec('ng build --base-href /rpdr-fl/ --aot', function (code, stdout, stderr) {
         shell.cd('..')
-        shell.exec('node app.js')
+        shell.exec('npm start')
     });
 });
 

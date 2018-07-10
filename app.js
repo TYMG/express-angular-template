@@ -10,8 +10,8 @@ var logger = require('morgan');
 var app = express();
 
 // view engine setup
-app.use('/matt-green',express.static(path.join(__dirname,'dist/matt-green/')));
-app.use('/rpdr-fl',express.static(path.join(__dirname,'dist/rpdr-fl/')));
+app.use('/matt-green', express.static(path.join(__dirname, 'dist/matt-green/')));
+app.use('/rpdr-fl', express.static(path.join(__dirname, 'dist/rpdr-fl/')));
 
 
 /*app.use(logger('dev'));
@@ -22,11 +22,11 @@ app.use(cookieParser());
 //app.use('/', indexRouter);
 
 app.get('/', (req, res) => {
-    res.sendFile('dist/matt-green/index.html', {root: __dirname});
+  res.sendFile('dist/matt-green/index.html', { root: __dirname });
 });
 
 app.get('/rpdr-fl', (req, res) => {
-    res.sendFile('dist/rpdr-fl/index.html', {root: __dirname});
+  res.sendFile('dist/rpdr-fl/index.html', { root: __dirname });
 });
 
 /*
@@ -48,9 +48,7 @@ app.use(function (err, req, res, next) {
 */
 
 const port = process.env.PORT || '3001';
-app.set('port' , port);
-
 const server = http.createServer(app);
 server.listen(port, () => console.log(`Running`));
 
-//module.exports = app;
+module.exports = app;
