@@ -1,18 +1,15 @@
-div#about-me__main {
-    padding: 1%;
+#about-me__main {
     background-color: hotpink;
+    min-height: 100%;
 }
 
-#about-me__main div{
-    display: flex;
-    flex-direction: column;
-}
+
 
 #about-me__pictureIntro{
-    height: 1000px;
+    height: 50%;
 }
 
-#about-me__pictureIntro div{
-    display: flex;
-    flex-flow: row;
+#about-me__bio p{
+    padding: 5px 10px;
 }
+

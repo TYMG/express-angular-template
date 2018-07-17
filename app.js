@@ -8,12 +8,12 @@ const shell = require('shelljs');
 console.log('Building Angular Apps')
 shell.cd('matt-green')
 console.log('Building matt-green now.........................')
-shell.exec('ng build --base-href /matt-green/ --aot', function (code, stdout, stderr) {
+shell.exec('ng build --base-href / --aot', function (code, stdout, stderr) {
     shell.cd('../rpdr-fl')
     console.log('Building rpdr-fl now............................')
     shell.exec('ng build --base-href /rpdr-fl/ --aot', function (code, stdout, stderr) {
         shell.cd('..')
-        shell.exec('node ./bin/www')
+        shell.exec('node main')
     });
 });
 

@@ -10,7 +10,8 @@ var logger = require('morgan');
 var app = express();
 
 // view engine setup
-app.use('/matt-green', express.static(path.join(__dirname, 'dist/matt-green/')));
+app.use('/public/images', express.static(path.join(__dirname,'public/images/')));
+app.use('/', express.static(path.join(__dirname, 'dist/matt-green/')));
 app.use('/rpdr-fl', express.static(path.join(__dirname, 'dist/rpdr-fl/')));
 
 

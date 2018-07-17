@@ -1,0 +1,10 @@
+#career__main {
+    background-color: lawngreen;
+    min-height: 100%;
+}
+
+#career__main ul{
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}

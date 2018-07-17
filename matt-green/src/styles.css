@@ -2,19 +2,39 @@
 
 html,body{
     margin:0;
-    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     color: white;
     background-color: black;
 }
 
 app-root {
-  display: flex;
+    flex: 1;
+    max-height: 90vh;
+/*display: flex;
   flex-direction: column;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0;*/
+}
+
+footer {
+    height: 5vh;
+    background-color: lightslategray;
+    margin: auto auto 0 auto;
+    min-width: 100vw
+}
+
+img {
+    min-height: 100%;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 1em;
 }
 
 .flex-1 {
@@ -28,4 +48,13 @@ app-root {
 .dotted-border{
     border: 1px dotted;
     border-color: white;
+    border-radius: 5px;
+}
+
+.section-padding{
+    padding: 20px;
+}
+
+.text {
+    font-size: 1.25em;
 }
